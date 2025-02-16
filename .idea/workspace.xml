@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41e85095-3ea3-49aa-8a7d-b4091686f567" name="Changes" comment="Initial Commit" />
+    <list default="true" id="41e85095-3ea3-49aa-8a7d-b4091686f567" name="Changes" comment="Initial Commit">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Varof/IdeaProjects/QA_Test_Rozetka/.idea",
+    "last_opened_file_path": "C:/Users/Varof/IdeaProjects/QA_Test_Rozetka",
     "onboarding.tips.debug.path": "C:/Users/Varof/IdeaProjects/QA_Test_Rozetka/src/main/java/org/example/Main.java",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
@@ -116,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739719978140</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1739720105847</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1739720105847</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
