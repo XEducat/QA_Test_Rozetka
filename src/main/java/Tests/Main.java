@@ -3,6 +3,8 @@ package Tests;
 // Якщо Page функція має більше ніж 4 дії (строки)
 // То виносити в {Page}Action.
 
+import Tests.Pages.ItemPage;
+
 /// https://rozetka.com.ua/ua/apple-iphone-15-pro-1tb-white-titanium/p395461029/
 ///
 /// 1 Перейти на ссылку с телефоном.
@@ -22,12 +24,7 @@ package Tests;
 /// TestNG.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
-        }
+        ItemPage itemPage = new ItemPage();
+        itemPage.StartTesting();
     }
 }
