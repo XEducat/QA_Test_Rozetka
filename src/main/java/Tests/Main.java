@@ -1,9 +1,9 @@
 package Tests;
 
+import Tests.Pages.ItemPage;
+
 // Якщо Page функція має більше ніж 4 дії (строки)
 // То виносити в {Page}Action.
-
-import Tests.Pages.ItemPage;
 
 /// https://rozetka.com.ua/ua/apple-iphone-15-pro-1tb-white-titanium/p395461029/
 ///
@@ -16,15 +16,14 @@ import Tests.Pages.ItemPage;
 /// 6 Проверить цену и название.
 ///
 /// Technology:
-/// Page Tools,
+/// ✅ Page Tools,
 /// Cucumber (BDD),
-/// Pattern Pages,
-/// Selenide,
-/// Maven (command: mvn clean test),
-/// TestNG.
+/// ✅ Pattern Pages,
+/// ✅ Selenide,
+/// ✅ Maven (command: mvn clean test),
+/// ✅ TestNG.
 public class Main {
     public static void main(String[] args) {
-        ItemPage itemPage = new ItemPage();
-        itemPage.StartTesting();
+
     }
 }

@@ -4,22 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41e85095-3ea3-49aa-8a7d-b4091686f567" name="Changes" comment="Add Pattern Pages architecture">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/ItemPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/PageActions/ItemAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="41e85095-3ea3-49aa-8a7d-b4091686f567" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Tests/Models/ItemData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/PageActions/CatalogAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CatalogPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/CatalogPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ItemPage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Tests/PageTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/PageTools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/CatalogPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/ItemPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Pages/CatalogPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/CatalogPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Pages/ItemPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/ItemPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Pages/PageActions/ItemAction.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Tests/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tests/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Tests/PageTools.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tests/PageTools.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Tests/Pages/CatalogPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tests/Pages/CatalogPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Tests/Pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tests/Pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Tests/Pages/ItemPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tests/Pages/ItemPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Tests/Pages/PageActions/ItemAction.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,44 +63,122 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Varof/IdeaProjects/QA_Test_Rozetka&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Varof/IdeaProjects/QA_Test_Rozetka/src/main/java/org/example/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.CatalogPage.executor": "Run",
+    "JUnit.Tests.Pages in QA_Test_Rozetka.executor": "Run",
+    "Karate.search.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.CatalogPage.executor": "Run",
+    "TestNG.CatalogPage.testItemExistsInCatalog.executor": "Run",
+    "TestNG.CatalogPage.testItemExistsInCatalogAndOpen.executor": "Run",
+    "TestNG.CatalogPage.testNavigateToItemAndCompareDetails.executor": "Run",
+    "TestNG.HomePage.executor": "Run",
+    "TestNG.Tests.Pages.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/Varof/IdeaProjects/QA_Test_Rozetka/src/test/java",
+    "last_opened_file_path": "C:/Users/Varof/IdeaProjects/QA_Test_Rozetka",
+    "onboarding.tips.debug.path": "C:/Users/Varof/IdeaProjects/QA_Test_Rozetka/src/main/java/org/example/Main.java",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Varof\IdeaProjects\QA_Test_Rozetka\.idea" />
       <recent name="C:\Users\Varof\IdeaProjects\QA_Test_Rozetka" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Tests.Pages" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tests.Main" />
+  <component name="RunManager" selected="Karate.search">
+    <configuration name="search" type="KarateRunConfiguration" factoryName="KarateRunConfiguration" temporary="true">
+      <option name="karatePath" value="$PROJECT_DIR$/src/main/resources/features/search.feature" />
+      <module name="QA_Test_Rozetka" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CatalogPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA_Test_Rozetka" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.*" />
+          <option name="PATTERN" value="Tests.Pages.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="Tests.Pages" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Pages.CatalogPage" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CatalogPage.testItemExistsInCatalogAndOpen" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_Test_Rozetka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Pages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Pages" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Pages.CatalogPage" />
+      <option name="METHOD_NAME" value="testItemExistsInCatalogAndOpen" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_Test_Rozetka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Pages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Pages" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Pages.HomePage" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.Pages" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_Test_Rozetka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Pages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Pages" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Karate.search" />
+        <item itemvalue="TestNG.Tests.Pages" />
+        <item itemvalue="TestNG.HomePage" />
+        <item itemvalue="TestNG.CatalogPage" />
+        <item itemvalue="TestNG.CatalogPage.testItemExistsInCatalogAndOpen" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +283,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739738209479</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add Selenide and realized PageTools.class methods">
+      <option name="closed" value="true" />
+      <created>1739741663407</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1739741663407</updated>
+    </task>
+    <task id="LOCAL-00013" summary="./Pages folder moved into ./Tests folder">
+      <option name="closed" value="true" />
+      <created>1739741765442</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1739741765442</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,6 +349,8 @@
     <MESSAGE value="Add git-ignore" />
     <MESSAGE value="Remove fake gitignore" />
     <MESSAGE value="Add Pattern Pages architecture" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Pattern Pages architecture" />
+    <MESSAGE value="Add Selenide and realized PageTools.class methods" />
+    <MESSAGE value="./Pages folder moved into ./Tests folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="./Pages folder moved into ./Tests folder" />
   </component>
 </project>

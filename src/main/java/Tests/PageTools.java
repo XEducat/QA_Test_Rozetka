@@ -1,18 +1,15 @@
 package Tests;
-import com.codeborne.selenide.Selenide;
+
 import com.codeborne.selenide.Condition;
-import static com.codeborne.selenide.Selenide.*;
+import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.WebDriverRunner;
+
+import static com.codeborne.selenide.Selenide.$x;
+import static com.codeborne.selenide.Selenide.sleep;
+import static org.testng.Assert.fail;
 
 public abstract class PageTools {
-    public boolean clickTo(String selector) {
-        try {
-            $(selector).shouldBe(Condition.visible).click();
-            return true;
-        } catch (Exception e) {
-            System.out.println("Помилка при кліку: " + e.getMessage());
-            return false;
-        }
-    }
 
     public boolean scrollDown() {
         try {
@@ -34,5 +31,21 @@ public abstract class PageTools {
         }
     }
 
-    public abstract void StartTesting();
+    protected boolean isOnPage(String expectedUrl) {
+        try {
+            return WebDriverRunner.url().equals(expectedUrl);
+        } catch (Exception e) {
+            System.out.println("Помилка при перевірці URL: " + e.getMessage());
+            return false;
+        }
+    }
+
+    public void clickOn(SelenideElement button, int waitTimeAfter) {
+        if (button.is(Condition.visible) && button.is(Condition.enabled)) {
+            button.click();
+            sleep(waitTimeAfter);
+        } else {
+            throw new IllegalStateException("Кнопка не клікабельна: " + button);
+        }
+    }
 }
