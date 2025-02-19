@@ -1,11 +1,11 @@
 package Tests.Pages;
 
-
 import Tests.PageTools;
-import com.codeborne.selenide.SelenideElement;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
 import org.testng.Assert;
-import org.testng.annotations.Test;
-
+import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.*;
 
 public class HomePage extends PageTools {
@@ -16,21 +16,19 @@ public class HomePage extends PageTools {
     private SelenideElement searchInput = $x("/html/body/rz-app-root/div/div[1]/rz-main-header/header/div/div/div/rz-search-suggest/form/div[1]/div/div/input");
     private SelenideElement searchButton = $x("/html/body/rz-app-root/div/div[1]/rz-main-header/header/div/div/div/rz-search-suggest/form/div[1]/button");
 
-    // Пошук товарів за запитом: "Iphone 15"
-    /**
-     * Cucumber-стиль коментарів:
-     * Given я відкриваю головну сторінку
-     * When я вводжу "Iphone 15" в поле пошуку
-     * And я натискаю кнопку пошуку
-     * Then я переходжу на сторінку каталогу iPhone 15
-     */
-    @Test
-    public void testSearchItems() {
+    @Given("користувач відкриває головну сторінку Rozetka")
+    public void openHomePage() {
         open(URL);
-        searchInput.setValue("Iphone 15");
-        clickOn(searchButton, 3000);
+    }
 
-        // Використовуємо assertTrue, щоб перевірити, чи сторінка відкрита
+    @When("користувач вводить {string} у поле пошуку та натискає кнопку пошуку")
+    public void searchForItem(String itemName) {
+        searchInput.setValue(itemName);
+        clickOn(searchButton, 2000);
+    }
+
+    @Then("сторінка каталогу {string} відкривається")
+    public void verifyCatalogPage(String catalogURL) {
         Assert.assertTrue(isOnPage(catalogURL), "Перехід на сторінку каталогу не був успішним");
     }
 }

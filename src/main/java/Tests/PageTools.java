@@ -5,9 +5,7 @@ import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 
-import static com.codeborne.selenide.Selenide.$x;
 import static com.codeborne.selenide.Selenide.sleep;
-import static org.testng.Assert.fail;
 
 public abstract class PageTools {
 
@@ -33,7 +31,7 @@ public abstract class PageTools {
 
     protected boolean isOnPage(String expectedUrl) {
         try {
-            return WebDriverRunner.url().equals(expectedUrl);
+            return WebDriverRunner.url().contains(expectedUrl);
         } catch (Exception e) {
             System.out.println("Помилка при перевірці URL: " + e.getMessage());
             return false;

@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41e85095-3ea3-49aa-8a7d-b4091686f567" name="Changes" comment="Add tests to MainPage and CatalogPage">
+    <list default="true" id="41e85095-3ea3-49aa-8a7d-b4091686f567" name="Changes" comment="Update gitIgnore">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Tests/TestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/catalogPage.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/homePage.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/PageTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/PageTools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Pages/CatalogPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/CatalogPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/HomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +62,8 @@
     "Application.Main.executor": "Run",
     "JUnit.CatalogPage.executor": "Run",
     "JUnit.Tests.Pages in QA_Test_Rozetka.executor": "Run",
+    "Karate.Tests.executor": "Run",
+    "Karate.homePage:3.executor": "Run",
     "Karate.search.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -61,6 +72,12 @@
     "TestNG.CatalogPage.testItemExistsInCatalogAndOpen.executor": "Run",
     "TestNG.CatalogPage.testNavigateToItemAndCompareDetails.executor": "Run",
     "TestNG.HomePage.executor": "Run",
+    "TestNG.TestRunner.executor": "Run",
+    "TestNG.TestRunner.runScenario (1).executor": "Run",
+    "TestNG.TestRunner.runScenario (2).executor": "Run",
+    "TestNG.TestRunner.runScenario (3).executor": "Run",
+    "TestNG.TestRunner.runScenario (4).executor": "Run",
+    "TestNG.TestRunner.runScenario.executor": "Run",
     "TestNG.Tests.Pages.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -75,30 +92,27 @@
       <recent name="C:\Users\Varof\IdeaProjects\QA_Test_Rozetka\.idea" />
       <recent name="C:\Users\Varof\IdeaProjects\QA_Test_Rozetka" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Varof\IdeaProjects\QA_Test_Rozetka\src\main\resources\features" />
+      <recent name="C:\Users\Varof\IdeaProjects\QA_Test_Rozetka\src\test" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Tests" />
       <recent name="Tests.Pages" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Karate.search">
-    <configuration name="search" type="KarateRunConfiguration" factoryName="KarateRunConfiguration" temporary="true">
-      <option name="karatePath" value="$PROJECT_DIR$/src/main/resources/features/search.feature" />
-      <module name="QA_Test_Rozetka" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CatalogPage" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestRunner">
+    <configuration name="TestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA_Test_Rozetka" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.Pages.*" />
+          <option name="PATTERN" value="Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests.Pages" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Pages.CatalogPage" />
+      <option name="MAIN_CLASS_NAME" value="Tests.TestRunner" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -106,51 +120,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CatalogPage.testItemExistsInCatalogAndOpen" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestRunner.runScenario (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA_Test_Rozetka" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.Pages.*" />
+          <option name="PATTERN" value="Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests.Pages" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Pages.CatalogPage" />
-      <option name="METHOD_NAME" value="testItemExistsInCatalogAndOpen" />
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.TestRunner" />
+      <option name="METHOD_NAME" value="runScenario" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="1" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestRunner.runScenario (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA_Test_Rozetka" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.Pages.*" />
+          <option name="PATTERN" value="Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests.Pages" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Pages.HomePage" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.TestRunner" />
+      <option name="METHOD_NAME" value="runScenario" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="1" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.Pages" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestRunner.runScenario (3)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA_Test_Rozetka" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.Pages.*" />
+          <option name="PATTERN" value="Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests.Pages" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.TestRunner" />
+      <option name="METHOD_NAME" value="runScenario" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="1" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner.runScenario (4)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_Test_Rozetka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.TestRunner" />
+      <option name="METHOD_NAME" value="runScenario" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="1" />
       <properties />
       <listeners />
       <method v="2">
@@ -159,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Karate.search" />
-        <item itemvalue="TestNG.Tests.Pages" />
-        <item itemvalue="TestNG.HomePage" />
-        <item itemvalue="TestNG.CatalogPage" />
-        <item itemvalue="TestNG.CatalogPage.testItemExistsInCatalogAndOpen" />
+        <item itemvalue="TestNG.TestRunner" />
+        <item itemvalue="TestNG.TestRunner.runScenario (4)" />
+        <item itemvalue="TestNG.TestRunner.runScenario (3)" />
+        <item itemvalue="TestNG.TestRunner.runScenario (2)" />
+        <item itemvalue="TestNG.TestRunner.runScenario (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -292,7 +331,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739985638417</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Update gitIgnore">
+      <option name="closed" value="true" />
+      <created>1739985698873</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1739985698873</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -345,6 +392,7 @@
     <MESSAGE value="Add Selenide and realized PageTools.class methods" />
     <MESSAGE value="./Pages folder moved into ./Tests folder" />
     <MESSAGE value="Add tests to MainPage and CatalogPage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add tests to MainPage and CatalogPage" />
+    <MESSAGE value="Update gitIgnore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update gitIgnore" />
   </component>
 </project>
