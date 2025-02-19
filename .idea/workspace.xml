@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41e85095-3ea3-49aa-8a7d-b4091686f567" name="Changes" comment="Update gitIgnore">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tests/TestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/catalogPage.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/homePage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="41e85095-3ea3-49aa-8a7d-b4091686f567" name="Changes" comment="Cucumber library connected">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/PageTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/PageTools.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Pages/CatalogPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/CatalogPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/HomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -339,7 +331,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739985698873</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Cucumber library connected">
+      <option name="closed" value="true" />
+      <created>1739995543245</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1739995543245</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -393,6 +393,7 @@
     <MESSAGE value="./Pages folder moved into ./Tests folder" />
     <MESSAGE value="Add tests to MainPage and CatalogPage" />
     <MESSAGE value="Update gitIgnore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update gitIgnore" />
+    <MESSAGE value="Cucumber library connected" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cucumber library connected" />
   </component>
 </project>
