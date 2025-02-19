@@ -1,8 +1,8 @@
 package Tests.Pages;
 
-import Tests.Models.ItemData;
 import Tests.PageTools;
 import Tests.Pages.PageActions.CatalogAction;
+import Tests.Models.ItemData;
 import com.codeborne.selenide.*;
 import io.cucumber.java.en.*;
 import static com.codeborne.selenide.Selenide.*;

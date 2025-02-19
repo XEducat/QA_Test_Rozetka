@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41e85095-3ea3-49aa-8a7d-b4091686f567" name="Changes" comment="Cucumber library connected">
+    <list default="true" id="41e85095-3ea3-49aa-8a7d-b4091686f567" name="Changes" comment="Refactored CatalogPage">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Pages/CatalogPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/CatalogPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +44,9 @@
     &quot;accountId&quot;: &quot;c63ed646-fd0e-4ccb-bdfb-b8a3bf9fc82d&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -49,36 +56,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.CatalogPage.executor": "Run",
-    "JUnit.Tests.Pages in QA_Test_Rozetka.executor": "Run",
-    "Karate.Tests.executor": "Run",
-    "Karate.homePage:3.executor": "Run",
-    "Karate.search.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TestNG.CatalogPage.executor": "Run",
-    "TestNG.CatalogPage.testItemExistsInCatalog.executor": "Run",
-    "TestNG.CatalogPage.testItemExistsInCatalogAndOpen.executor": "Run",
-    "TestNG.CatalogPage.testNavigateToItemAndCompareDetails.executor": "Run",
-    "TestNG.HomePage.executor": "Run",
-    "TestNG.TestRunner.executor": "Run",
-    "TestNG.TestRunner.runScenario (1).executor": "Run",
-    "TestNG.TestRunner.runScenario (2).executor": "Run",
-    "TestNG.TestRunner.runScenario (3).executor": "Run",
-    "TestNG.TestRunner.runScenario (4).executor": "Run",
-    "TestNG.TestRunner.runScenario.executor": "Run",
-    "TestNG.Tests.Pages.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/Users/Varof/IdeaProjects/QA_Test_Rozetka/src/test/java",
-    "last_opened_file_path": "C:/Users/Varof/IdeaProjects/QA_Test_Rozetka",
-    "onboarding.tips.debug.path": "C:/Users/Varof/IdeaProjects/QA_Test_Rozetka/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CatalogPage.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Tests.Pages in QA_Test_Rozetka.executor&quot;: &quot;Run&quot;,
+    &quot;Karate.Tests.executor&quot;: &quot;Run&quot;,
+    &quot;Karate.homePage:3.executor&quot;: &quot;Run&quot;,
+    &quot;Karate.search.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.CatalogPage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CatalogPage.testItemExistsInCatalog.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CatalogPage.testItemExistsInCatalogAndOpen.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CatalogPage.testNavigateToItemAndCompareDetails.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomePage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestRunner.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestRunner.runScenario (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestRunner.runScenario (2).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestRunner.runScenario (3).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestRunner.runScenario (4).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestRunner.runScenario.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Tests.Pages.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Varof/IdeaProjects/QA_Test_Rozetka/src/test/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Varof/IdeaProjects/QA_Test_Rozetka&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Varof/IdeaProjects/QA_Test_Rozetka/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Varof\IdeaProjects\QA_Test_Rozetka\.idea" />

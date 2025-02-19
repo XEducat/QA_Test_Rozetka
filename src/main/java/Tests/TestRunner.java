@@ -25,15 +25,18 @@ import static com.codeborne.selenide.Selenide.*;
 /// Allure-report UI.
 
 @CucumberOptions(
-        features = "src/main/resources/features",
-        glue = "Tests.Pages",
-        plugin = {"pretty", "html:target/cucumber-reports.html"}
+        features = "src/main/resources/features", // Вказуємо шлях до ваших файлів з фічами
+        glue = "Tests.Pages", // Вказуємо пакет з Step Definitions
+        plugin = {
+                "pretty",
+                "html:target/cucumber-reports.html" // Генерація HTML звіту
+        }
 )
+public class TestRunner extends AbstractTestNGCucumberTests {
 
-public class TestRunner extends AbstractTestNGCucumberTests
-{
     @BeforeSuite
     public void openBrowserBeforeTests() {
-        open("https://www.google.com"); // Браузер открывается перед всеми тестами
+        open("https://www.google.com"); // Браузер відкривається перед усіма тестами
     }
 }
+
