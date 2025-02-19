@@ -4,23 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41e85095-3ea3-49aa-8a7d-b4091686f567" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tests/Models/ItemData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/PageActions/CatalogAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/PageTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/PageTools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Pages/CatalogPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/CatalogPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Pages/ItemPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/ItemPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Pages/PageActions/ItemAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Tests/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tests/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Tests/PageTools.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tests/PageTools.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Tests/Pages/CatalogPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tests/Pages/CatalogPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Tests/Pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tests/Pages/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Tests/Pages/ItemPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tests/Pages/ItemPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Tests/Pages/PageActions/ItemAction.class" beforeDir="false" />
+    <list default="true" id="41e85095-3ea3-49aa-8a7d-b4091686f567" name="Changes" comment="Add tests to MainPage and CatalogPage">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739741765442</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add tests to MainPage and CatalogPage">
+      <option name="closed" value="true" />
+      <created>1739985638417</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1739985638417</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -351,6 +344,7 @@
     <MESSAGE value="Add Pattern Pages architecture" />
     <MESSAGE value="Add Selenide and realized PageTools.class methods" />
     <MESSAGE value="./Pages folder moved into ./Tests folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="./Pages folder moved into ./Tests folder" />
+    <MESSAGE value="Add tests to MainPage and CatalogPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add tests to MainPage and CatalogPage" />
   </component>
 </project>
