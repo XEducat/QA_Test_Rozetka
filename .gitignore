@@ -2,3 +2,4 @@
 /build/reports/tests/
 /target
 /allure-results/
+/.allure/allure-2.8.1/

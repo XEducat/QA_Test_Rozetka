@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41e85095-3ea3-49aa-8a7d-b4091686f567" name="Changes" comment="Refactored CatalogPage">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="41e85095-3ea3-49aa-8a7d-b4091686f567" name="Changes" comment="Add Allure reports">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/PageTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/PageTools.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Pages/CatalogPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/CatalogPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/TestRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/catalogPage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/catalogPage.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/homePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/homePage.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +103,41 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestRunner">
+  <component name="RunManager" selected="TestNG.CatalogPage">
+    <configuration name="CatalogPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_Test_Rozetka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Pages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Pages" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Pages.CatalogPage" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_Test_Rozetka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Pages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Pages" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Pages.HomePage" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA_Test_Rozetka" />
       <extension name="coverage">
@@ -113,44 +149,6 @@
       <option name="PACKAGE_NAME" value="Tests.Pages" />
       <option name="MAIN_CLASS_NAME" value="Tests.TestRunner" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestRunner.runScenario (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="QA_Test_Rozetka" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.TestRunner" />
-      <option name="METHOD_NAME" value="runScenario" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="1" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestRunner.runScenario (2)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="QA_Test_Rozetka" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.TestRunner" />
-      <option name="METHOD_NAME" value="runScenario" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="1" />
       <properties />
       <listeners />
       <method v="2">
@@ -197,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CatalogPage" />
+        <item itemvalue="TestNG.HomePage" />
         <item itemvalue="TestNG.TestRunner" />
         <item itemvalue="TestNG.TestRunner.runScenario (4)" />
         <item itemvalue="TestNG.TestRunner.runScenario (3)" />
-        <item itemvalue="TestNG.TestRunner.runScenario (2)" />
-        <item itemvalue="TestNG.TestRunner.runScenario (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -346,7 +344,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739995543245</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add Allure reports">
+      <option name="closed" value="true" />
+      <created>1740260082680</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1740260082680</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -401,6 +407,7 @@
     <MESSAGE value="Add tests to MainPage and CatalogPage" />
     <MESSAGE value="Update gitIgnore" />
     <MESSAGE value="Cucumber library connected" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cucumber library connected" />
+    <MESSAGE value="Add Allure reports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Allure reports" />
   </component>
 </project>

@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Test Suite">
-    <test name="Cucumber Tests">
+    <test name="Home Page Tests">
         <classes>
-            <class name="Tests.TestRunner" /> <!-- Вказуємо головний клас для запуску -->
+            <class name="Tests.Pages.HomePage"/>
+        </classes>
+    </test>
+    <test name="Catalog Page Tests">
+        <classes>
+            <class name="Tests.Pages.CatalogPage"/>
         </classes>
     </test>
 </suite>

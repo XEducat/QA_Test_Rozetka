@@ -7,7 +7,7 @@ import com.codeborne.selenide.WebDriverRunner;
 
 import static com.codeborne.selenide.Selenide.sleep;
 
-public abstract class PageTools {
+public class PageTools {
 
     public boolean scrollDown() {
         try {
@@ -29,7 +29,7 @@ public abstract class PageTools {
         }
     }
 
-    protected boolean isOnPage(String expectedUrl) {
+    public boolean isOnPage(String expectedUrl) {
         try {
             return WebDriverRunner.url().contains(expectedUrl);
         } catch (Exception e) {

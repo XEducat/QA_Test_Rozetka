@@ -12,6 +12,10 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <aspectj.version>1.9.7</aspectj.version>
+        <allure-testng.version>2.21.0</allure-testng.version>
+        <maven-surefire-plugin.version>3.5.2</maven-surefire-plugin.version>
+        <allure-maven-plugin.version>2.10.0</allure-maven-plugin.version>
     </properties>
 
     <dependencies>
@@ -42,6 +46,20 @@
             <artifactId>cucumber-core</artifactId>
             <version>7.14.0</version>
         </dependency>
+
+        <!-- Allure TestNG -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>${allure-testng.version}</version>
+        </dependency>
+
+        <!-- AspectJ Weaver для Allure -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -50,12 +68,33 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.5.2</version>
+                <version>${maven-surefire-plugin.version}</version>
                 <configuration>
+                    <argLine>-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"</argLine>
+                    <systemProperties>
+                        <property>
+                            <name>allure.results.directory</name>
+                            <value>${project.build.directory}/allure-results</value>
+                        </property>
+                    </systemProperties>
                     <suiteXmlFiles>
                         <suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
+            </plugin>
+
+            <!-- Allure Maven Plugin (оновлена конфігурація) -->
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>${allure-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
