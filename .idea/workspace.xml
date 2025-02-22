@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41e85095-3ea3-49aa-8a7d-b4091686f567" name="Changes" comment="Add Allure reports">
+    <list default="true" id="41e85095-3ea3-49aa-8a7d-b4091686f567" name="Changes" comment="Code refactoring">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/productAvailabilityСheck.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/productSearch.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/PageTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/PageTools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Pages/CatalogPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/CatalogPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/TestRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/catalogPage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/catalogPage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/homePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/homePage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/catalogPage.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/homePage.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,36 +55,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CatalogPage.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Tests.Pages in QA_Test_Rozetka.executor&quot;: &quot;Run&quot;,
-    &quot;Karate.Tests.executor&quot;: &quot;Run&quot;,
-    &quot;Karate.homePage:3.executor&quot;: &quot;Run&quot;,
-    &quot;Karate.search.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;TestNG.CatalogPage.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CatalogPage.testItemExistsInCatalog.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CatalogPage.testItemExistsInCatalogAndOpen.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CatalogPage.testNavigateToItemAndCompareDetails.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePage.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestRunner.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestRunner.runScenario (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestRunner.runScenario (2).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestRunner.runScenario (3).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestRunner.runScenario (4).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestRunner.runScenario.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Tests.Pages.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/Varof/IdeaProjects/QA_Test_Rozetka/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Varof/IdeaProjects/QA_Test_Rozetka&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Varof/IdeaProjects/QA_Test_Rozetka/src/main/java/org/example/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Cucumber Java.Feature: catalogPage.executor": "Run",
+    "JUnit.CatalogPage.executor": "Run",
+    "JUnit.Tests.Pages in QA_Test_Rozetka.executor": "Run",
+    "Karate.Tests.executor": "Run",
+    "Karate.homePage:3.executor": "Run",
+    "Karate.search.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.CatalogPage.executor": "Run",
+    "TestNG.CatalogPage.testItemExistsInCatalog.executor": "Run",
+    "TestNG.CatalogPage.testItemExistsInCatalogAndOpen.executor": "Run",
+    "TestNG.CatalogPage.testNavigateToItemAndCompareDetails.executor": "Run",
+    "TestNG.HomePage.executor": "Run",
+    "TestNG.TestRunner.executor": "Run",
+    "TestNG.TestRunner.runScenario (1).executor": "Run",
+    "TestNG.TestRunner.runScenario (2).executor": "Run",
+    "TestNG.TestRunner.runScenario (3).executor": "Run",
+    "TestNG.TestRunner.runScenario (4).executor": "Run",
+    "TestNG.TestRunner.runScenario.executor": "Run",
+    "TestNG.Tests.Pages.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/Varof/IdeaProjects/QA_Test_Rozetka/src/test/java",
+    "last_opened_file_path": "C:/Users/Varof/IdeaProjects/QA_Test_Rozetka",
+    "onboarding.tips.debug.path": "C:/Users/Varof/IdeaProjects/QA_Test_Rozetka/src/main/java/org/example/Main.java",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Varof\IdeaProjects\QA_Test_Rozetka\.idea" />
@@ -103,7 +101,25 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CatalogPage">
+  <component name="RunManager" selected="Cucumber Java.Feature: catalogPage">
+    <configuration name="Feature: catalogPage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/catalogPage.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="QA_Test_Rozetka" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: catalogPage" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CatalogPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA_Test_Rozetka" />
       <extension name="coverage">
@@ -155,25 +171,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRunner.runScenario (3)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="QA_Test_Rozetka" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.TestRunner" />
-      <option name="METHOD_NAME" value="runScenario" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="1" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestRunner.runScenario (4)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA_Test_Rozetka" />
       <extension name="coverage">
@@ -195,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: catalogPage" />
         <item itemvalue="TestNG.CatalogPage" />
         <item itemvalue="TestNG.HomePage" />
         <item itemvalue="TestNG.TestRunner" />
         <item itemvalue="TestNG.TestRunner.runScenario (4)" />
-        <item itemvalue="TestNG.TestRunner.runScenario (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -352,7 +349,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740260082680</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Add Allure reports">
+      <option name="closed" value="true" />
+      <created>1740263185154</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1740263185154</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Code refactoring">
+      <option name="closed" value="true" />
+      <created>1740266088509</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1740266088509</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -408,6 +421,7 @@
     <MESSAGE value="Update gitIgnore" />
     <MESSAGE value="Cucumber library connected" />
     <MESSAGE value="Add Allure reports" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Allure reports" />
+    <MESSAGE value="Code refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code refactoring" />
   </component>
 </project>
