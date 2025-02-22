@@ -19,13 +19,12 @@ This repository contains automated tests to verify key features of the website R
 1. Clone the repository:
    ```bash
    git clone https://github.com/XEducat/QA_Test_Rozetka.git
-
 2. Navigate to the project directory:
    ```
    cd {your-project-directory}
-  
 4. Run the tests:
+   ```
    mvn clean test
-
-5. View Allure Report: After the tests are executed, generate the Allure report by running:
+6. View Allure Report: After the tests are executed, generate the Allure report by running:
+   ```
    mvn allure:serve
