@@ -13,41 +13,39 @@ import org.testng.annotations.BeforeSuite;
 import static com.codeborne.selenide.Selenide.*;
 
 @CucumberOptions(
-        features = "src/main/resources/features/homepage.feature", // Шлях до фічі для HomePage
-        glue = "Tests.Pages", // Пакет з Step Definitions для HomePage
+        features = "src/main/resources/features/productSearch.feature",
+        glue = "Tests.Pages",
         plugin = {
                 "pretty",
-                "html:target/cucumber-homepage-reports.html", // Генерація HTML звіту для HomePage
-                "json:target/cucumber-homepage-reports.json"  // Генерація JSON звіту для HomePage
-        },
-        monochrome = true // Зробити вивід в термінал більш зручним для читання
+                "html:target/cucumber-homepage-reports.html",
+                "json:target/cucumber-homepage-reports.json"
+        }
 )
 public class HomePage extends AbstractTestNGCucumberTests {
     private PageTools pageTools = new PageTools();;
     public final String URL = "https://rozetka.com.ua/ua/";
-    public final String catalogURL = "https://rozetka.com.ua/ua/mobile-phones/c80003/producer=apple;series=iphone-15,iphone-15-plus,iphone-15-pro,iphone-15-pro-max/#search_text=iphone+15";
 
-    // Локатори
+    // Locators
     private SelenideElement searchInput = $x("/html/body/rz-app-root/div/div[1]/rz-main-header/header/div/div/div/rz-search-suggest/form/div[1]/div/div/input");
     private SelenideElement searchButton = $x("/html/body/rz-app-root/div/div[1]/rz-main-header/header/div/div/div/rz-search-suggest/form/div[1]/button");
 
     @BeforeSuite
     public void openBrowserBeforeTests() {
-        open("https://www.google.com"); // Браузер відкривається перед усіма тестами
+        open("https://www.google.com");
     }
 
-    @Given("користувач відкриває головну сторінку Rozetka")
+    @Given("user opens Rozetka home page")
     public void openHomePage() {
         open(URL);
     }
 
-    @When("користувач вводить {string} у поле пошуку та натискає кнопку пошуку")
+    @When("user enters {string} in search box and clicks search button")
     public void searchForItem(String itemName) {
         searchInput.setValue(itemName);
         pageTools.clickOn(searchButton, 2000);
     }
 
-    @Then("сторінка каталогу {string} відкривається")
+    @Then("catalog page {string} opens")
     public void verifyCatalogPage(String catalogURL) {
         Assert.assertTrue(pageTools.isOnPage(catalogURL), "Перехід на сторінку каталогу не був успішним");
     }

@@ -8,7 +8,6 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.*;
 
 public class CatalogAction {
-
     public ItemData searchAndOpenItem(String catalogURL, String itemName) {
         open(catalogURL);
 

@@ -4,9 +4,6 @@ import Tests.PageTools;
 import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.*;
 
-// Якщо Page функція має більше ніж 4 дії (строки)
-// То виносити в {Page}Action
-
 public class ItemPage extends PageTools {
     public final String URL = "https://rozetka.com.ua/ua/apple-iphone-15-pro-1tb-white-titanium/p395461029/";
     public String nameText = "";
