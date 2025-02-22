@@ -18,7 +18,7 @@ This repository contains automated tests to verify key features of the website R
 ## How to Run the Tests:
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/XEducat/QA_Test_Rozetka.git
 
 2. Navigate to the project directory:
    cd <project-directory>
