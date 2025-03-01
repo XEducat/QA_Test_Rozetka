@@ -25,8 +25,8 @@ public class CatalogStepDefinition {
 
     @Then("the product page opens and all parameters match")
     public void verifyItemPage() {
-        assertEquals(WebDriverRunner.url(), ItemPage.URL, "URL не співпадає! Перехід на сторінку товару не відбувся.");
-        assertEquals(foundedItem.titleText, expectedItem.titleText, "Назва товару не співпадає!");
-        assertEquals(foundedItem.priceText, expectedItem.priceText, "Ціна товару не співпадає!");
+        assertEquals(WebDriverRunner.url(), ItemPage.URL, "URL does not match! The transition to the product page did not occur.");
+        assertEquals(foundedItem.titleText, expectedItem.titleText, "Product name does not match!");
+        assertEquals(foundedItem.priceText, expectedItem.priceText, "Product price does not match!");
     }
 }

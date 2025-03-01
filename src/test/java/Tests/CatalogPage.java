@@ -5,7 +5,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
         features = "src/test/java/features/productAvailabilityСheck.feature",
-        glue = "Tests.StepDefinitions",  // Указываем правильный пакет с шагами!
+        glue = "Tests.StepDefinitions",
         plugin = {
                 "pretty",
                 "html:target/cucumber-catalogpage-reports.html",
@@ -13,5 +13,5 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
         }
 )
 public class CatalogPage extends AbstractTestNGCucumberTests {
-    // Этот класс остается Page Object, но не содержит шагов
+        // This class remains a Page Object, CatalogStepDefinitions contain steps
 }

@@ -1,6 +1,5 @@
 package Pages.PageActions;
 
-import Pages.CatalogPage;
 import Pages.Models.ItemData;
 import Tools.PageTools;
 import com.codeborne.selenide.Condition;

@@ -20,6 +20,6 @@ public class HomeStepDefinition {
 
     @Then("catalog page {string} opens")
     public void verifyCatalogPage(String pageURL) {
-        Assert.assertEquals(WebDriverRunner.url(), pageURL, "Неправильный переход на страницу каталога");
+        Assert.assertEquals(WebDriverRunner.url(), pageURL, "Incorrect transition to directory page");
     }
 }
