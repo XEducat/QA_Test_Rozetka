@@ -2,12 +2,12 @@
 <suite name="Test Suite">
     <test name="Home Page Tests">
         <classes>
-            <class name="Tests.Pages.HomePage"/>
+            <class name="Tests.HomePage"/>
         </classes>
     </test>
     <test name="Catalog Page Tests">
         <classes>
-            <class name="Tests.Pages.CatalogPage"/>
+            <class name="Tests.CatalogPage"/>
         </classes>
     </test>
 </suite>
